@@ -1,2 +1,8 @@
-package com.sgsistemas.apibanco.tiposabstratos;public class ContaRepositoryAbstract {
+package com.sgsistemas.apibanco.tiposabstratos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class ContaRepositoryAbstract<CONTA extends ContaAbstract, REPO extends JpaRepository<CONTA, Long>> {
+
+    // CONTA findPessoaByid(Long id);
 }

@@ -10,6 +10,11 @@ import java.util.Optional;
 
 @Service
 public class JuridicaService extends ContaServiceAbstract<Juridica, JuridicaRepository> {
+    JuridicaRepository juridicaRepository;
+    @Override
+    public List<Juridica> listarTodos() {
+        return juridicaRepository.findAll();
+    }
 //    @Autowired
 //    JuridicaRepository juridicaRepository;
 //    @Autowired

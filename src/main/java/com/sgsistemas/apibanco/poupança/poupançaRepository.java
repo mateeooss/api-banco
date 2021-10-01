@@ -7,5 +7,4 @@ import java.util.Optional;
 
 public interface poupançaRepository extends JpaRepository<Poupança, Long> {
     Optional<Poupança> findPessoaByid(Long id);
-
 }

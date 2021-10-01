@@ -11,6 +11,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "id")
 public class Fisica extends ContaAbstract implements Serializable {
 
      @OneToOne
@@ -63,5 +64,9 @@ public class Fisica extends ContaAbstract implements Serializable {
 
      public Long getId() {
           return super.getId();
+     }
+     @Override
+     public int tipo(){
+          return 1;
      }
 }

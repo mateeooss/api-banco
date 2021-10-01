@@ -58,7 +58,10 @@ public class Juridica extends ContaAbstract {
     public void setPessoa(Pessoa pessoa) {
         this.pessoa = pessoa;
     }
-
+    @Override
+    public int tipo(){
+        return 1;
+    }
 //    public Long getId() {
 //        return id;
 //    }

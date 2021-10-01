@@ -49,4 +49,8 @@ public class Poupança extends ContaAbstract {
     public Long getId() {
         return id;
     }
+    @Override
+    public int tipo(){
+        return 1;
+    }
 }
