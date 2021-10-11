@@ -1,6 +1,7 @@
 package com.sgsistemas.apibanco.poupança;
 
 import com.sgsistemas.apibanco.fisica.Fisica;
+import com.sgsistemas.apibanco.tiposabstratos.ContaRepositoryAbstract;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
