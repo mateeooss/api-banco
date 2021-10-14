@@ -11,12 +11,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/fisica")
-public class FisicaController  extends ContaControllerAbstract<Fisica, FisicaService> {
-    FisicaService fisicaService;
+public class FisicaController extends ContaControllerAbstract<Fisica, FisicaService> {
 
-    @GetMapping("/listar-todos")
-    @Override
-    public List<Fisica> listarTodos() {
-        return fisicaService.listarTodos();
-    }
 }

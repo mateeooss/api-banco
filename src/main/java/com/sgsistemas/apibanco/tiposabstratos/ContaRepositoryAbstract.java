@@ -1,8 +1,15 @@
 package com.sgsistemas.apibanco.tiposabstratos;
 
+import com.sgsistemas.apibanco.registro.Registro;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
-public class ContaRepositoryAbstract<CONTA extends ContaAbstract, REPO extends JpaRepository<CONTA, Long>> {
+import java.util.List;
 
-    // CONTA findPessoaByid(Long id);
+public interface ContaRepositoryAbstract<CONTA extends ContaBase> extends JpaRepository<CONTA, Long> {
+
+    //findRegistroBy
+
+
 }

@@ -13,21 +13,19 @@ public class PessoaController {
     PessoaService pessoaService;
 
     @PostMapping
-    public void registrar(@RequestBody Pessoa pessoa){
+    public void registrar(@RequestBody Pessoa pessoa) {
         pessoaService.registrar(pessoa);
     }
 
     @GetMapping
-    public List<Pessoa> listarTodos(){
+    public List<Pessoa> listarTodos() {
         return pessoaService.listarTodos();
     }
 
     @GetMapping("{id}")
-    public Pessoa encontrarPeloId(@PathVariable Long id){
+    public Pessoa encontrarPeloId(@PathVariable Long id) {
         return pessoaService.encontrarPeloId(id);
     }
-
-
 
 
 }

@@ -1,9 +1,14 @@
 package com.sgsistemas.apibanco.pessoa;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
-public class Pessoa{
+@Getter
+@Setter
+public class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,29 +19,11 @@ public class Pessoa{
 
     public Pessoa() {
     }
+
     public Pessoa(String cpf, String nome) {
         this.cpf = cpf;
         this.nome = nome;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Long getId() {
-        return id;
-    }
 
 }

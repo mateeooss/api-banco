@@ -7,27 +7,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @RestController
 @RequestMapping("/poupança")
-public class poupançaController {
-    @Autowired
-    PoupançaService poupançaService;
-    @Autowired
-    RegistroService registroService;
+public class PoupançaController {
 
-
-    @PostMapping()
-    public void cadastrar(Poupança poupança){
-
-    }
-
-    @GetMapping
-    public List<Poupança> listarTodos(){
-        return poupançaService.listarTodos();
-    }
-
-    @GetMapping("{id}")
-    public Poupança encontrarFisica(@PathVariable Long id){
-        return poupançaService.encontrarPeloId(id);
-    }
+//    @GetMapping("{id}")
+//    public Poupança encontrarFisica(@PathVariable Long id){
+//        return poupançaService.encontrarPeloId(id);
+//    }
 
 
 
